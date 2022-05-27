@@ -4,7 +4,7 @@ import random
 import time
 from threading import Thread
 
-vk = vk_api.VkApi(token="API TOKEN")
+vk = vk_api.VkApi(7dfff577ea1e666df74cf7ac45a09fad54b4fb5da5a316561f452156c5438b83941abe47230fb5d347093)
 
 vk._auth_token()
 
@@ -14,14 +14,14 @@ DEBUG = True  # Enable or disable printing debug information to terminal
 MESSAGES_DELAY = 0.05  # Time to wait after spam message sent
 START_RAID_AFTER_CERTAIN_MESSAGE = False  # Start raid only after sending a message like "@bot_nick start" to chat
 
-longpoll = VkBotLongPoll(vk, ID группы)
+longpoll = VkBotLongPoll(club213554859)
 
 
 def raid(chat_id):
     if DEBUG: print("New Chat:", chat_id)
     while True:
         vk.method("messages.send", {"peer_id": event.object.peer_id,
-                                    "message": "😀 😃 😄 😁 😆 😅 😂 🤣 😇 😉 😊 🙂 🙃 ☺ 😋 😌 😍 🥰 😘 😗 😙 😚 🥲 🤪 😜 😝 😛 🤑 😎 🤓 🥸 🧐 🤠 🥳 🤗 🤡 😏 😶 😐 😑 😒 🙄 🤨 🤔 🤫 🤭 🤥 😳 😞 😟 😠 😡 🤬 😔 😕 🙁 ☹ 😬 🥺 😣 😖 😫 😩 🥱 😤 😮‍💨 😮 😱 😨 😰 😯 😦 😧 😢 😥 😪 🤤 😓 😭 🤩 😵 😵‍💫 🥴 😲 🤯 🤐 😷 🤕 🤒 🤮 🤢 🤧 🥵 🥶 😶‍🌫️ 😴 💤 😈 👿 👹 👺 💩 👻 💀 ☠ 👽 🤖 🎃 😺 😸 😹 😻 😼 😽 🙀 😿 😾 👐 🤲 🙌 👏 🙏 🤝 👍 👎 👊 ✊ 🤛 🤜 🤞 ✌ 🤘 🤟 👌 🤌 🤏 👈 👉 👆 👇 ☝ ✋ 🤚 🖐 🖖 👋 🤙 💪 🦾 🖕 ✍ 🤳 💅 🦵 🦿 🦶 👄 🦷 👅 👂 🦻 👃 👁 👀 🧠 🫀 🫁 🦴 👤 👥 🗣 🫂 👶 👧 🧒 👦 👩 🧑 👨 👩‍🦱 🧑‍🦱 👨‍🦱 👩‍🦰 🧑‍🦰 👨‍🦰 👱‍♀️ 👱 " + str(
+                                    "message": "Сыняра шлюхи я тебя щас отпизжу " + str(
                                         random.randint(0, 163664527287)),
                                     "random_id": 0})
         time.sleep(MESSAGES_DELAY)
